@@ -3,6 +3,7 @@ import {LuCalendarDays} from 'react-icons/lu'
 export default function Navbar() {
     return (
         <header className='md:px-20 px-5 py-6 flex justify-between items-center border-b border-b-[#ccc]'>
+            
             <div className='flex gap-2 items-center'>
                 <MdOutlinePets size={24} color="#3F9271" />
                 <span className='font-black text-[#153229] text-xs md:text-xl'>pet</span>
