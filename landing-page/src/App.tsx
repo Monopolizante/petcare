@@ -1,6 +1,6 @@
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Funcionalidades from './components/Funcionalidades';
+import Navbar from './layouts/Navbar';
+import Hero from './layouts/Hero';
+import Funcionalidades from './layouts/Funcionalidades';
 import Container from './components/Container';
 
 function App() {
