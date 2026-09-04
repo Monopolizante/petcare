@@ -1,6 +1,5 @@
-import express, { type Request, type Response} from 'express'
-import { error } from 'node:console'
-import { randomUUID } from 'node:crypto'
+
+import { stat } from 'node:fs'
 import { pool } from '../database/connection.ts'
 
 class ClienteService {
@@ -15,9 +14,11 @@ class ClienteService {
     async postCliente(userData: Object){
         try {
             console.log(userData)
-            const {userName, userTelefone, userIdade, userEmail} = userData
-            await pool.query("INSERT INTO clientes(nome, telefone, idade, email) VALUES ($1, $2, $3, $4)", 
-                [userName, userTelefone, userIdade, userEmail])
+            const trueData = JSON.parse(JSON.stringify(userData))
+            const {nome: nome, telefone: telefone, idade: idade, email: email} = trueData
+            const data = await pool.query("INSERT INTO clientes(nome, telefone, idade, email) VALUES ($1, $2, $3, $4) RETURNING id", 
+                [nome, telefone, idade, email])
+            return data.rows[0].id
         } catch (error) {
             console.error("Erro:",error)
         }
