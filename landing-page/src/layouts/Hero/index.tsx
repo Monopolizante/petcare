@@ -13,7 +13,7 @@ export default function Hero() {
                 <h1 className='font-black text-[#FF6B4A] text-3xl md:text-4xl'>numa coleira só.</h1>
                 <p className='text-wrap mt-4 mb-6 text-[#4B5A54] text-sm md:text-base'>Agende consultas, acompanhe vacinas e fale com veterinários sem sair do app. O PetCare organiza o que seu pet precisa, antes de você precisar lembrar.</p>
                 <div className='flex justify-center gap-5'>
-                    <Button text="Ver Funcionalidades" link="" color="text-[#DCEFE4]" bg_color="bg-color[#FF6B4A]" border="" bd_color="" />
+                    <Button text="Ver Funcionalidades" link="" color="text-[#DCEFE4]" bg_color="bg-[#FF6B4A]" border="border-[#FF6B4A]" bd_color="" />
                     <a href='' className='text-bold text-xs md:text-sm p-2 border rounded-full border-[#ccc] shadow-2xl'>Falar com um veterinário</a>
                 </div>
                 <div className='flex justify-center gap-8 mt-10 items-center content-center'>
