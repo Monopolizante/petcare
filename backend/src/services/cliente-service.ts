@@ -11,6 +11,14 @@ class ClienteService {
             console.error("Erro",error)
         }
     }
+    async getCliente(idCliente: string){
+        try {
+            const data = await pool.query("SELECT * FROM clientes WHERE id=$1", [idCliente])
+            return data.rows[0]
+        } catch (error) {
+            console.log("Erro em coletar dados do cliente:",error)
+        }
+    }
     async postCliente(userData: Object){
         try {
             console.log(userData)

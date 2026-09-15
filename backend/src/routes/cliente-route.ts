@@ -15,6 +15,16 @@ clienteRouter.get("/", async (req: Request, res: Response) => {
     }
 })
 
+clienteRouter.get("/:id", async (req: Request, res: Response) => {
+    try {
+        const idCliente = req.params.id
+        const data = await clienteService.getCliente(idCliente)
+        res.json(data)
+    } catch (error) {
+        console.log("Erro:",error)
+    }
+})
+
 clienteRouter.post("/", async (req: Request<{}, {}, CriarCliente>, res: Response) => {
     try {
         const userData = req.body

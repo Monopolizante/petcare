@@ -8,6 +8,7 @@ const app = express()
 app.use(express.json())
 
 app.use("/cliente", clienteRouter)
+app.use("/cliente/:id", clienteRouter)
 app.use("/animais", animaisRouter)
 app.listen(port, () =>{
     console.log(`Listening on port ${port}` )
