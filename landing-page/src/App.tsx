@@ -5,6 +5,7 @@ import Container from './components/Container';
 import Info from './layouts/Info';
 import Contact from './layouts/Contact';
 import Footer from './layouts/Footer';
+import WhatsButton from './components/WhatsButton';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Contact />
       </Container>
         <Footer />
+        <WhatsButton />
     </>
   )
 }
