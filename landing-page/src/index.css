@@ -6,6 +6,7 @@
   }
 :root {
     background-color: #FBF9F4;
+    scroll-behavior: smooth
 };
 
 @layer base {

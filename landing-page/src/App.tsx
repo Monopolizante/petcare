@@ -4,6 +4,7 @@ import Funcionalidades from './layouts/Funcionalidades';
 import Container from './components/Container';
 import Info from './layouts/Info';
 import Contact from './layouts/Contact';
+import Footer from './layouts/Footer';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Info />
         <Contact />
       </Container>
+        <Footer />
     </>
   )
 }

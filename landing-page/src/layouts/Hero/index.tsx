@@ -3,7 +3,7 @@ import { FaStar } from 'react-icons/fa'
 import Button from "../../components/Buttons";
 export default function Hero() {
     return (
-        <section className='items-center flex justify-center flex-col'>
+        <section id="inicio" className='items-center flex justify-center flex-col'>
             <div className='flex gap-2 items-center mt-10 md:mt-20 bg-[#DCEFE4] p-2 rounded-full'>
                 <MdOutlinePets size={20} color="#3F9271" />
                 <p className='text-[12px] md:text-xs text-[#153229] font-display'>Feito para tutores atentos</p>

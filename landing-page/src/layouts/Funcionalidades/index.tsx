@@ -3,7 +3,7 @@ import {LuCalendarDays} from 'react-icons/lu'
 
 export default function Funcionalidades(){
     return(
-            <section className='items-center flex justify-center flex-col'>
+            <section id="funcionalidades" className='items-center flex justify-center flex-col'>
                 <div className='flex gap-2 items-center mt-10 md:mt-20 bg-[#DCEFE4] p-2 rounded-full'>
                     <p className='text-[12px] md:text-xs text-bold text-[#153229] font-display'>Funcionalidades</p>
                 </div>
