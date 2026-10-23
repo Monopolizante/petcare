@@ -1,15 +1,12 @@
 
 import { pool } from '../database/connection'
+import { animaisRepository } from '../repositories/animais_repositories'
+import { type Request, type Response } from 'express'
 
-
-class AnimaisService{
+class AnimaisService {
     async getAll(){
-        try {
-            const data = await pool.query("SELECT * FROM animais")
-            return data.rows
-        } catch (error) {
-            console.log(error)
-        }
+        const data = await animaisRepository.getAll()
+        return data
     }
 }
 
